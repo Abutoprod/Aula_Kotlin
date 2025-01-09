@@ -11,39 +11,38 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seja Bem vindo!!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="140dp"
+        android:text="Sorteio"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="138dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
         android:backgroundTint="#2FB68B"
-        android:text="Subimt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="buttonPressedSort"
+        android:text="Sortear"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="C.P.F"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="182dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.326"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
